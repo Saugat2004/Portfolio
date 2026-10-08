@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saugat Chapagain</title>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header" id="header">
+      <nav class="navbar container">
+        <a href="#home" class="logo">
+          <img src="images/logo.png" alt="SC Logo" />
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle">
+          <i class="bx bx-menu"></i>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li>
+            <a href="#home" class="nav-link active">Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="nav-link">About</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <p class="eyebrow">FULL STACK DEVELOPER</p>
+
+            <h1>
+              Hi, I'm
+              <br />
+              <span>Saugat Chapagain.</span>
+            </h1>
+
+            <p class="hero-description">
+              Building purposeful digital experiences while continuously
+              learning and growing.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#contact" class="btn">
+                Contact Me
+                <i class="bx bx-right-arrow-alt"></i>
+              </a>
+
+              <a href="#about" class="text-link">
+                About Me
+                <i class="bx bx-down-arrow-alt"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-image-wrapper">
+            <div class="image-decoration"></div>
+
+            <div class="hero-image">
+              <img src="images/profile.jpeg" alt="Saugat Chapagain" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-label">
+              <p class="eyebrow">ABOUT ME</p>
+            </div>
+
+            <h2>
+              A little about
+              <span>what I do.</span>
+            </h2>
+          </div>
+
+          <div class="about-layout">
+            <div class="about-main">
+              <p class="about-large-text">
+                I'm Saugat Chapagain, a B.Sc. CSIT student and Full Stack
+                Developer passionate about building useful and user-friendly web
+                applications.
+              </p>
+
+              <p>
+                I enjoy working across both frontend and backend development,
+                turning ideas into functional digital experiences and
+                continuously improving my technical skills.
+              </p>
+            </div>
+
+            <div class="about-side">
+              <div class="about-block">
+                <h3>Development</h3>
+
+                <p>
+                  Creating responsive interfaces, web applications and backend
+                  systems with a focus on clean and practical solutions.
+                </p>
+              </div>
+
+              <div class="about-block">
+                <h3>Skills</h3>
+
+                <div class="skills">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>React</span>
+                  <span>PHP</span>
+                  <span>MySQL</span>
+                  <span>Git</span>
+                  <span>GitHub</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-label"></div>
+
+            <h2>
+              Let's get in
+              <span>touch.</span>
+            </h2>
+          </div>
+
+          <div class="contact-layout">
+            <div class="contact-info">
+              <p class="contact-intro">
+                Have a project, idea, or opportunity? Feel free to reach out.
+              </p>
+
+              <div class="social-icons">
+                <a href="#" target="_blank" aria-label="GitHub">
+                  <i class="bx bxl-github"></i>
+                </a>
+
+                <a href="#" target="_blank" aria-label="LinkedIn">
+                  <i class="bx bxl-linkedin"></i>
+                </a>
+
+                <a href="#" target="_blank" aria-label="Facebook">
+                  <i class="bx bxl-facebook"></i>
+                </a>
+
+                <a href="#" target="_blank" aria-label="Instagram">
+                  <i class="bx bxl-instagram"></i>
+                </a>
+              </div>
+            </div>
+
+            <form
+              class="contact-form"
+              id="contact-form"
+              action="backend/contact.php"
+              method="POST"
+            >
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Name</label>
+
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email</label>
+
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="your@email.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  placeholder="Tell me about your project..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn submit-btn">
+                Send Message
+                <i class="bx bx-right-arrow-alt"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>© 2026 Saugat Chapagain</p>
+
+        <a href="#home" class="back-top" aria-label="Back to top">
+          <i class="bx bx-up-arrow-alt"></i>
+        </a>
+      </div>
+    </footer>
+
+    <div id="toast" class="toast">
+      <i class="bx bx-check-circle"></i>
+      <span id="toast-message">Message sent successfully!</span>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
