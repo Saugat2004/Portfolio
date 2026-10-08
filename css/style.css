@@ -811,6 +811,69 @@ textarea {
   box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.08);
 }
 
+
+.hero-content {
+  animation: heroContentIn 1s ease-out both;
+}
+
+.hero-image-wrapper {
+  animation: heroImageIn 1.2s ease-out 0.15s both;
+}
+
+@keyframes heroContentIn {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes heroImageIn {
+  from {
+    opacity: 0;
+    transform: translateX(40px) scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.section > .container {
+  opacity: 0;
+  transform: translateY(35px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.section.visible > .container {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.hero-image {
+  animation: floatingImage 5s ease-in-out infinite;
+}
+
+@keyframes floatingImage {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
 @media (max-width: 600px) {
   .toast {
     right: 15px;
