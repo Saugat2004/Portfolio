@@ -14,13 +14,19 @@
   </head>
 
   <body>
+    <!-- Header -->
     <header class="header" id="header">
       <nav class="navbar container">
         <a href="#home" class="logo">
           <img src="images/logo.png" alt="SC Logo" />
         </a>
 
-        <button class="menu-toggle" id="menu-toggle">
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
           <i class="bx bx-menu"></i>
         </button>
 
@@ -41,6 +47,7 @@
     </header>
 
     <main>
+      <!-- Home Section -->
       <section class="hero" id="home">
         <div class="container hero-container">
           <div class="hero-content">
@@ -80,6 +87,7 @@
         </div>
       </section>
 
+      <!-- About Section -->
       <section class="about section" id="about">
         <div class="container">
           <div class="section-header">
@@ -137,6 +145,7 @@
         </div>
       </section>
 
+      <!-- Contact Section -->
       <section class="contact section" id="contact">
         <div class="container">
           <div class="section-header">
@@ -155,21 +164,80 @@
               </p>
 
               <div class="social-icons">
-                <a href="#" target="_blank" aria-label="GitHub">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                >
                   <i class="bx bxl-github"></i>
                 </a>
 
-                <a href="#" target="_blank" aria-label="LinkedIn">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
                   <i class="bx bxl-linkedin"></i>
                 </a>
 
-                <a href="#" target="_blank" aria-label="Facebook">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
                   <i class="bx bxl-facebook"></i>
                 </a>
 
-                <a href="#" target="_blank" aria-label="Instagram">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
                   <i class="bx bxl-instagram"></i>
                 </a>
+              </div>
+
+              <div class="contact-details">
+                <h3 class="contact-details-title">My Information</h3>
+
+                <div class="contact-item">
+                  <div class="contact-item-icon" aria-hidden="true">
+                    <i class="bx bx-map-pin"></i>
+                  </div>
+
+                  <div class="contact-item-content">
+                    <span>Location</span>
+                    <p>Biratnagar, Nepal</p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-item-icon" aria-hidden="true">
+                    <i class="bx bx-envelope"></i>
+                  </div>
+
+                  <div class="contact-item-content">
+                    <span>Email Address</span>
+                    <a href="mailto:chapagainsaugat89@gmail.com">
+                      chapagainsaugat89@gmail.com
+                    </a>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-item-icon" aria-hidden="true">
+                    <i class="bx bx-phone"></i>
+                  </div>
+
+                  <div class="contact-item-content">
+                    <span>Phone Number</span>
+                    <a href="tel:+9779816940002"> +977 9816940002 </a>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -241,6 +309,7 @@
       <i class="bx bx-check-circle"></i>
       <span id="toast-message">Message sent successfully!</span>
     </div>
+
     <script src="js/script.js"></script>
   </body>
 </html>
